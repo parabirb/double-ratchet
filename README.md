@@ -13,3 +13,9 @@ this library is NOT misuse-proof. if you manage to screw something up that is on
 
 ## api documentation
 there is no documentation for the API. please refer to forward-secrecy's documentation if you want to use this.
+
+## size
+double-ratchet is pretty small. the minified version, double-ratchet.min.js, can fit in 17 tweets (assuming tweet size is 280 chars)
+
+## caveats
+when used in browser, `secretSession` is set in the window.
