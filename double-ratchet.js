@@ -40,7 +40,7 @@ const doubleRatchetFunctions = {
     // keypair generation
     GENERATE_DH: () => _crypto.box.keyPair(),
     // diffie-hellman
-    DH: (dh_pair, dh_pub) => _crypto.scalarMult(dh_pair.secretKey, dh_pub),
+    DH: (dh_pair, dh_pub) => nacl.hash(_crypto.scalarMult(dh_pair.secretKey, dh_pub)),
     // KDF_RK
     KDF_RK: function KDF_RK(rk, dh_out) {
         // HMAC(dh_out, rk)
