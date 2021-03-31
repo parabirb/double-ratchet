@@ -1,5 +1,5 @@
 /*
-    BUCKLE YOUR SEATBELTS, MOTHERFUCKERS, BECAUSE IN 313
+    BUCKLE YOUR SEATBELTS, MOTHERFUCKERS, BECAUSE IN 315
     SHORT LINES, I AM GOING TO IMPLEMENT YOU A THING THAT
     I ONLY FIGURED OUT ABOUT TWO HOURS AGO. SO SIT DOWN,
     SHUT UP, AND ENJOY THE EXPERIENCE OF MY 4 AM REDBULL
@@ -222,7 +222,7 @@ class doubleRatchet {
                 let mk = this.MKSKIPPED[header.dh][header.n];
                 delete this.MKSKIPPED[header.dh][header.n];
                 // decrypt
-                return doubleRatchetFunctions.DECRYPT(mk, ciphertext, CONCAT(header));
+                return doubleRatchetFunctions.DECRYPT(mk, ciphertext, doubleRatchetFunctions.CONCAT(header));
             }
         }
         // no match? get out
@@ -279,7 +279,9 @@ class doubleRatchet {
         let plaintext = this.TrySkippedMessageKeys(message.header, message.ciphertext);
         // check if we have plaintext
         if (plaintext !== false) {
-            return plaintext;
+            return {
+                cleartext: plaintext
+            };
         }
         // if the header's dh isn't our DHr
         if (this.DHr === null || message.header.dh !== _crypto.util.encodeBase64(this.DHr)) {
