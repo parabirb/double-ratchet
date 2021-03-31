@@ -1,5 +1,5 @@
 /*
-    BUCKLE YOUR SEATBELTS, MOTHERFUCKERS, BECAUSE IN 315
+    BUCKLE YOUR SEATBELTS, MOTHERFUCKERS, BECAUSE IN 313
     SHORT LINES, I AM GOING TO IMPLEMENT YOU A THING THAT
     I ONLY FIGURED OUT ABOUT TWO HOURS AGO. SO SIT DOWN,
     SHUT UP, AND ENJOY THE EXPERIENCE OF MY 4 AM REDBULL
@@ -109,8 +109,6 @@ const doubleRatchetFunctions = {
     },
     // convenient function
     CATMANYTHINGSPLEASE: (a, b, c) => new Uint8Array([...a, ...b, ...c])
-    // another one
-
 };
 
 // class for double ratchets
