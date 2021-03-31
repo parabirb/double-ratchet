@@ -1,5 +1,5 @@
 # double-ratchet
-double-ratchet is a library for double ratchet in JS. its API mimics that of [forward-secrecy](https://github.com/alax/forward-secrecy), although the cryptographic primitives are different. **tweetnacl, tweetnacl-auth-js, and tweetnacl-util-js are required.**
+double-ratchet is a library for signal's [double ratchet (revision 1)](https://signal.org/docs/specifications/doubleratchet) in JS. its API mimics that of [forward-secrecy](https://github.com/alax/forward-secrecy), although the cryptographic primitives are different. **tweetnacl, tweetnacl-auth-js, and tweetnacl-util-js are required.**
 
 ## cryptographic primitives
 * XSalsa20-Poly1305 for encryption/decryption
