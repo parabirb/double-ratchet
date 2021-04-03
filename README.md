@@ -19,3 +19,6 @@ double-ratchet is pretty small. the minified version, double-ratchet.min.js, can
 
 ## caveats
 when used in browser, `secretSession` is set in the window.
+
+## export regulations
+there are some laws which require you to do some bureaucratic shit to export this in the US. idk what they are and have not done the "necessary" steps. if you want to export this yourself or include this in software which will be exported, you need to figure out the laws in your country.
